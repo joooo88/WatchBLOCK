@@ -1,0 +1,289 @@
+@import "./mixin";
+
+/*데탑 1440px*/
+@include desktop{
+    main {
+        #about {
+            .about-bg2 {
+                img{
+                    height: 284vh;
+                }
+            }
+            .about1 {
+                .ab1-box {
+                    h3 {
+                        bb{
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+            }
+        }
+        #coin {
+            .coin-main {
+                padding: 0 0 1rem;
+                .coin-main {
+                    padding-top: 1rem;
+                    .coin-left{
+                        padding-top: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*노트북 1024px*/
+@include laptop{
+    main {
+        #about {
+            .about-bg2 {
+                img{
+                    height: 270vh;
+                }
+            }
+            .about1 {
+                .ab1-box{
+                    h3 {
+                        font-size: 1rem;
+                        bb{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+            .about2{
+                padding-top: 0rem;
+                .ab2-box {
+                    h3{
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+            .about3 {
+                .hover-box {
+                    ul {
+                        .di-up {
+                            .no1{
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*패드 991px*/
+@include tablet{
+    main {
+        #about{
+            padding: 0 6rem;
+            .about-bg2 {
+                border-radius: 30px;
+                img{
+                    height: 258vh;
+                }
+            }
+        }
+    }
+}
+
+/*아이패드 768px*/
+@include itablet{
+    main {
+        #about {
+            .about-bg2 {
+                img{
+                    height: 300vh;
+                }
+            }
+            .about3 {
+                .hover-box {
+                    ul {
+                        .di-up{
+                            padding: 1rem 0;
+                            height: 240px;
+                            justify-content: space-between;
+                            .no2{
+                                top: 4rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* 모바일 767px*/
+@include mobile{
+    main {
+        #about {
+            .about-bg2 {
+                img {
+                    height: 475vh;
+                }
+            } 
+            .about3 {
+                .hover-box {
+                    ul {
+                        .di-up {
+                            .no2{
+                                top: 7rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #coin {
+            .coin-main {
+                .coin-left {
+                    li {
+                        h3{
+                            p {
+                                left: 13rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        .footer_area {
+            .inc{
+                width: 100%;
+            }
+        }
+    }
+}
+
+/* 모바일2 576px */
+@include mobile2{
+    main {
+        #home {
+            .home_wrap {
+                .home_right{
+                    padding-top: 5rem;
+                    width: 80%;
+                }
+            }
+        }
+        #about {
+            .about-bg2 {
+                img{
+                    height: 483vh;
+                }
+            }
+        }
+        #coin {
+            .coin-main {
+                .coin-right {
+                    .coin-down {
+                        div {
+                            h3{
+                                padding-left: 0;
+                            }
+                        }
+                    }
+                    .coin-text{
+                        text-align: center;
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* 모바일3 갤석시 425px */
+@include galaxy{
+    main {
+        #home {
+            .home_wrap {
+                .home_right{
+                    height: 100%;
+                    width: 90%;
+                    padding-top: 3rem;
+                }
+            }
+        }
+        #about {
+            padding: 0 4rem;
+            .about-bg2 {
+                img{
+                    height: 495vh;
+                }
+            }
+            .about1 {
+                .container-item {
+                    .item2{
+                        grid-row: 2/2;
+                        grid-column: 1/4;    
+                    }
+                    .item3{
+                        grid-column: 1/4;    
+                    }
+                    .item4{
+                        grid-row: 4/4;
+                        grid-column: 1/4;    
+                    }
+                }
+            }
+            .about2{
+                height: 100%;
+                padding-top: 3rem;
+                .swiper{
+                    .swiper-scrollbar{
+                        display: none;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+/* 모바일4 아이폰 375px */
+@include iphone{
+    main {
+        #home {
+            .home_wrap {
+                .home_right{
+                    height: 55%;
+                    .home-r-b {
+                        .home_txt{
+                            h4{
+                                font-size: 1.3rem;
+                            }
+                            p{
+                                line-height: 1.2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #about {
+            .about-bg1 {
+                display: none;
+            }
+            .about-bg2 {
+                top: 7rem;
+            }
+            .about1{
+                padding: 10rem 0 0;
+            }
+        }
+        #coin {
+            .coin-title {
+                h2{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

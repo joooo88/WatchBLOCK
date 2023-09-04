@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>와치블록 | WatchBLOCK</title>
+
+  <!--meta-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"> 
+  <meta http-equiv="X-UA-Compatible" content="le=edge">
+
+  <!--bootstrap-->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!--css-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+  <link rel="stylesheet" href="css/reset.css?after">
+  <link rel="stylesheet" href="css/index.css?after">
+  <link rel="stylesheet" href="css/moblie.css?after">
+
+  <!--favicon--->
+  <link href="img/favicon.ico" rel="icon">
+  <link href="img/favicon.ico" rel="apple-touch-icon">
+
+  <!--js-->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="js/menu_scroll.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+
+
+<body>
+
+
+  <header  class="header" >
+
+    <div class="hd_all">
+
+      <hgroup>
+
+        <a href="#home">
+          <h1 class="menu_style">
+            <img src="img/watchblcok logo row.png" alt="logo">
+          </h1>
+        </a>
+
+      </hgroup>
+
+      <article>
+        <nav class="pc_menu">
+        <ul class="menu_style">
+
+          <li><a href="#home" class="scroll"onClick="selectLink(this); return false;">Home</a></li>
+          <li><a href="#about" class="scroll" onClick="selectLink(this); return false;">About</a></li>
+          <li><a href="#coin" class="scroll" onClick="selectLink(this); return false;">WatchBLOCK Coin</a></li>
+          <li><a href="#roadmap" class="scroll" onClick="selectLink(this); return false;">Roadmap</a></li>
+          <li><a href="#contact" class="scroll" onClick="selectLink(this); return false;">Contact</a></li>
+          <!-- <li class="lang"><a href="index_eng.html" class="scroll"><div>
+            Kor| <bb>Eng </bb>
+          </div></a></li> -->
+
+
+        </ul>
+      </nav>
+
+      <lnb class="lang">
+        <div>
+          <ul id="myList">LANG▾
+            <li><a href="index.html">KOR</a></li>
+            <li><a href="index_eng.html">ENG</a></li>
+          </ul>
+        </div>
+      </lnb>
+      </article>
+      
+      
+
+     <!--반응형-->
+
+     <div class="m_menu_button">
+
+      <a href="#" class="menu-trigger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+
+    </div>
+
+     <!--반응형 js-->
+     <script type="text/javascript">
+
+      $(function () {
+        $(".menu-trigger").click(function (e) {
+          e.preventDefault();
+          $(this).toggleClass('active-' + 1);
+        });
+      });
+
+    </script>
+
+    <nav class="m_menu">
+      <ul class="menu_style">
+        <li><a href="#home" class="scroll" onClick="selectLink(this); return false;" id="myLink">Home</a></li>
+        <li><a href="#about" class="scroll" onClick="selectLink(this); return false;">About</a></li>
+        <li><a href="#coin" class="scroll" onClick="selectLink(this); return false;">WatchBLOCK Coin</a></li>
+        <li><a href="#roadmap" class="scroll" onClick="selectLink(this); return false;">Roadmap</a></li>
+        <li><a href="#contact" class="scroll" onClick="selectLink(this); return false;">Contact</a></li>
+        <li class="lang"><a href="index_eng.html" class="scroll"><div>
+          Eng
+        </div></a></li>
+      </ul>
+      
+    </nav>
+
+    <!--반응형 js-->
+    <script type="text/javascript">
+      $(function () {
+        $(".m_menu_button").click(function () {
+          $(".m_menu").animate({ height: "toggle" }, 250);
+        });
+      });
+
+    </script>
+
+    </div>
+
+  </header>
+
+  <main>
+    <!-- home -->
+    <section id="home">
+      <div class="main_video">
+        <video autoplay muted loop playsinline>
+          <source src="vid/main_vid.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="home_wrap">
+
+        <div class="home_left">
+          <div class="home_logo" data-aos="fade-right" data-aos-duration="1000">
+            <img src="img/watchblcok logo.png">
+          </div>
+
+          <div class="home_btn" >
+            <button class="button-64" role="button"  onclick="location.href='http://wcbl.io/WatchBlock-whitepaper-kor.pdf'"  data-aos="fade-right" data-aos-duration="1200"><span class="text">Whitepaper</span></button>
+            <button class="button-64" role="button"  onclick="location.href='https://watchblock.app' " data-aos="fade-right" data-aos-duration="1500"><span class="text">Wallet</span></button>
+          </div>
+        </div>
+        
+
+        <div class="home_right">
+          <div class="home-r-b">
+            <div class="home_txt" data-aos="fade-right" data-aos-duration="1000">
+            <h2 class="tracking-in-expand">WatchBLOCK</h2>
+            <img class="lin1" src="img/lin 3.png">
+            <h4>와치블록, 럭셔리 시계의 소유와<br>거래의 관습을 영원히<br>바꿔놓겠습니다. </h4>
+            <img class="lin2" src="img/lin 1.png">
+            <p>
+              이제 기존 현물거래의 모든 약점을 없앤<br>
+              블록체인 적용 거래방식과 관리로<br>
+              럭셔리 시계의 소유와 거래의 관습을 재창조 합니다.<br>
+              와치블록, 블록체인 기술의 총아로서 시장의 흐름을 바꿉니다.
+            </p>
+            <img class="lin3" src="img/lin 2.png">
+            <br>
+
+            
+            </div>
+          </div>
+         
+ 
+        </div>
+
+      </div>
+    </section>
+    <!-- about -->
+    <section id="about">
+      <article class="about-bg1">
+        <img class="bg1" src="img/2.png">
+        <img class="bg2" src="img/2.png">
+      </article>
+      <article class="about-bg2">
+        <img src="img/about bg3.png">
+      </article>
+
+      <article class="about1">
+        <div class="container-item" data-aos="fade-right" data-aos-duration="1000">
+          <span class="item item1" ><div>ERC721는<br>블록체인 데이터베이스</div></span>
+          <span class="item item2" ><div>NFT 제품과 거래 내역 아카이브에 내장된 데이터베이스</div></span>
+          <span class="item item3" ><div>블록체인을 통해 거래되는 NFT 제품들의 메타데이터</div></span>
+          <span class="item item4" ><div>NFT 시장 서비스 제공자와 시장 참여자들이 수집한 거래 데이터.</div></span>
+        </div>
+        <div class="ab1-box"  data-aos="fade-left" data-aos-duration="1000">
+          <h2>Intro.</h2>
+          <h3>블록체인의 <bb>투명성, 자료의 일관성, 객관성</bb>은<br>
+            기존 관습에 묶여 있는 거래시장의 패러다임을<br>
+            바꾸기에는 충분히 혁명적 입니다.
+            <br>
+            <br>
+            패러다임의 <bb>변화, 기술의 변화</bb>가 먼저입니다.
+          </h3>
+          <img src="img/watchblcok logo.png">
+        </div>
+      </article>
+
+      <article class="about2" >
+        <div class="ab2-box">
+          <h2 data-aos-easing="linear" data-aos="fade-down" data-aos-duration="600">Blockchain Protocol</h2>
+          <h3 data-aos-easing="linear" data-aos="fade-down" data-aos-duration="600">지금까지 수 십 억 건의 거래를 통해 안전성, 비용효율성, 투명성이<br>
+            검증 된 ERC20에 NFT 상품의 거래를 위해 ERC721기술을<br> 
+            추가 도입하여 NFT거래 방식의 안정성과 효율성을 배가합니다.
+            <br><br>
+            럭셔리 시계 NFT의 거래와 소유, 이제 블록체인을 통해 완전히 다른 방식으로 진행됩니다.
+          </h3>
+        </div>
+        <div class="swiper" data-aos-easing="linear" data-aos="fade-down" data-aos-duration="1000">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="img/about 0.png">
+              <div class='slide-text'>
+                <div>$590,008</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/about 1.png">
+              <div class='slide-text'>
+                <div>$583,948</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/about 2.png">
+              <div class='slide-text'>
+                <div>$1,398,948</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/about 3.png">
+              <div class='slide-text'>
+                <div>$58,987</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/about 4.png">
+              <div class='slide-text'>
+                <div>$2,948,948</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/about 5.png">
+              <div class='slide-text'>
+                <div>$284,899</div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+        </div>
+       
+      </article>
+
+      <article class="about3">
+        <div class="ab3-box"data-aos-easing="linear" data-aos="fade-down" data-aos-duration="600">
+          <h2>사업참여 가능자 및 각 참여자 혜택</h2>
+        </div>
+
+        <div class="hover-box"data-aos-easing="linear" data-aos="fade-down" data-aos-duration="600">
+          <ul class="diagram1">
+            <li class="di-up">
+              <div><h3>1</h3></div>
+              <img src="img/icon 1.png">
+              <h4 class="no1">럭셔리 시계 NFT 상품 제작자</h4>
+              <h4 class="no2">Luxury NFT market service providers</h4>
+            </li>
+            <li class="di-down">
+              <img src="img/Group 25.png">
+            </li>
+          </ul>
+          <ul class="diagram2">
+            <li class="di-up">
+              <div><h3>2</h3></div>
+              <img src="img/icon 2.png">
+              <h4 class="no1">럭셔리 NFT 카피라이트 보유 기업</h4>
+              <h4 class="no2">Individual and institutional investors</h4>
+            </li>
+            <li class="di-down">
+              <img src="img/side 2.jpg">
+            </li>
+          </ul>
+          <ul class="diagram3">
+            <li class="di-up">
+              <div><h3>3</h3></div>
+              <img src="img/icon 3.png">
+              <h4 class="no1">럭셔리 시계 NFT 거래 개인 및 기관 수집가</h4>
+              <h4 class="no2">Luxury watch makers</h4>
+            </li>
+            <li class="di-down">
+              <img src="img/side 3.jpg">
+            </li>
+          </ul>
+          <ul class="diagram4">
+            <li class="di-up">
+              <div><h3>4</h3></div>
+              <img src="img/icon 4.png">
+              <h4 class="no1">럭셔리 시계 중고 현물 매매상</h4>
+              <h4 class="no2">NFT distribution channel</h4>
+            </li>
+            <li class="di-down">
+              <img src="img/side 4.jpg">
+            </li>
+          </ul>
+        </div>
+
+        <div class="ani-box"data-aos-easing="linear" data-aos="fade-down" data-aos-duration="600">
+          <div>
+            <img class="img-up" src="img/about 0.png">
+            <img class="img-side"src="img/side 1.png">
+            <img class="img-down" src="img/about 0.png">
+          </div>
+        </div>
+
+        <div class="mi-text">WatchBLOCK</div>
+      </article>
+      
+    </section>
+    <!-- coin -->
+    <section id="coin">
+
+      <article class="coin-title"data-aos-easing="linear" data-aos="fade-down" data-aos-duration="600">
+        <h2>코인 배분 및 사용 계획</h2>
+        <h3>( Budget allocations ) </h3>
+      </article>
+
+      <article class="coin-main" data-aos-easing="linear" data-aos="fade-left" data-aos-duration="1000">
+        <ul class="coin-right">
+          <li class="coin-up">
+            <h2>시장분석</h2>
+            <h3>유니크 한 개성을 가진 럭셔리 시계 상품의 경우에는 기존 럭셔리 브랜드의 보유자 및 기관/개인 수집가들에게 가능한 빠른 시간내에 인지도를 높이는 것이 초반 성패를 좌우 할 것 입니다.</h3>
+          </li>
+          <li class="coin-down">
+            <div>
+              <h3>코인 이름 : WatchBLOCK</h3>
+              <h3>코인 티커 : WCBL</h3>
+              <h3>프로토콜 : ERC721</h3>
+              <h3>총 합계 : 400,000,000</h3>
+            </div>
+          </li>
+          <div class="coin-text">
+            <h4>발행개수 : 400,000,000</h4>
+            <h4>총합 : 400,000,000</h4>
+          </div>
+
+        </ul>
+        <ul class="coin-left animated-element" >
+          <li class="coin-01">
+            <h3>팀 보상 <p>10%</p></h3>
+            
+          </li>
+          <li class="coin-02">
+            <h3>토큰세일 <p>10%</p></h3>
+            
+          </li>
+          <li class="coin-03">
+            <h3>운영 예비 자금 <p>10%</p></h3>
+            
+          </li>
+          <li class="coin-04">
+            <h3>글로벌 판매<br>네트워크 구축 <p>5%</p></h3>
+            
+          </li>
+          <li class="coin-05">
+            <h3>국제 럭셔리 NFT<br>전시회 출품 및 엽업 <p>25%</p></h3>
+            
+          </li>
+          <li class="coin-06">
+            <h3>글로벌 온라인<br>티켓 마케팅 <p>40%</p></h3>
+            
+          </li>
+          
+        </ul>
+        
+      </article>
+  
+    </section>
+    <!-- roadmap -->
+    <section id="roadmap">
+
+      <article class="road-title" data-aos-easing="linear" data-aos="fade-down" data-aos-duration="600">
+        <img src="img/title 1.png">
+        <h2>Roadmap</h2>
+      </article>
+
+      <article class="road-box">
+        <ul class="road23" data-aos-easing="linear" data-aos="fade-left" data-aos-duration="1000">
+          <div class="container">
+            <li class="img-23">
+              <img src="img/2023 1.jpg" class="img-display-23">
+              <img src="img/2023 2.jpg" class="img-display-23">
+              <img src="img/2023 3.jpg" class="img-display-23">
+              <img src="img/2023 4.jpg" class="img-display-23">
+            </li>
+            <h2>2023</h2>
+            <li class="text-23">
+              <button onclick="changeImage(1, 'img-display-23')">Q1 WatchBLOCK 사업 시작</button>
+              <button onclick="changeImage(2, 'img-display-23')">Q2 국제 럭셔리 시계 현물 시장 조사</button>
+              <button onclick="changeImage(3, 'img-display-23')">Q3 비즈니스 플랫폼 확장 가능 블록체인 지갑 출시</button>
+              <button onclick="changeImage(4, 'img-display-23')">Q4 국제 거래소 1차 상장</button>
+            </li>
+          </div>
+        </ul>
+      </article>
+      
+      <article class="road-box">
+        <ul class="road24" data-aos-easing="linear" data-aos="fade-right" data-aos-duration="1500">
+          <div class="container">
+            <li class="text-24">
+              <button onclick="changeImage(5, 'img-display-24')">Q1 국제 럭셔리 테마 NFT상품 전시회 참여</button>
+              <button onclick="changeImage(6, 'img-display-24')">Q2 국제 거래소 2차 상장 NFT재판매<br>채널 구축을 위한 시장 조사</button>
+              <button onclick="changeImage(7, 'img-display-24')">Q3 확장성 탑재 비즈니스 플랫폼 앱 출시</button>
+              <button onclick="changeImage(8, 'img-display-24')">Q4 국제 시장 확대를 위한 NFT 거래소 출품 확대</button>
+            </li>
+            <h2>2024</h2>
+            <li class="img-24">
+              
+              <img src="img/2024 1.jpg" class="img-display-24">
+              <img src="img/2024 2.jpg" class="img-display-24">
+              <img src="img/2024 3.jpg" class="img-display-24">
+              <img src="img/2024 4.jpg" class="img-display-24">
+            </li>
+            
+          </div>
+        </ul>
+      </article>
+    </section>
+    <!-- contact -->
+    <section id="contact" >
+      <article class="con-bg">
+        <img src="img/contanct bg.png">
+      </article>
+      <article class="con-sub"data-aos-easing="linear" data-aos="fade-down" data-aos-duration="600">
+        <ul>
+          <li class="con-text">
+            <h2>Contact</h2>
+          </li>
+          <li class="con-input">
+            <form method="post" onsubmit="return validate();">
+              <input type="text" id="email" placeholder="Email" required>
+              <input type="text" id="text" placeholder="Message" required>
+              <input type="submit" value="SUBMIT" >
+            </form>
+          </li>
+        </ul>
+      </article>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="footer_area container">
+
+      <a class="logo-footer" href="#home">
+          <img src="img/watchblcok logo.png" alt="logo">
+      </a>
+     
+
+      <ul class="inc">
+        <h4>WatchBLOCK Inc.</h4>
+        <!-- <li>운영사 :</li> -->
+        <!-- <li>예금주 : </li> -->
+        <li>Address : 경기도 수원시 팔달구 인계동 957번지 동부빌딩 502-85호 <!--  --></li>
+       <!--  <li>wallet : <span onclick="location.href='#' "></span></li> -->
+        <li>고객센터 : <!-- 070-8018-7692 --> <span>(월~금 10am~5pm시 - 점심12~2pm)</span></li>
+      </ul>
+
+      <div class="white_pp">
+        <h4>Whitepaper</h4>
+        <aside class="but-box">
+          <button type="button" onclick="location.href='WatchBlock-whitepaper-kor.pdf' " target="_blank"><img src="img/icons8-pdf-48-k.png">Kor</button>
+          <button type="button" onclick="location.href='WatchBlock-whitepaper-eng.pdf' "><img src="img/icons8-pdf-48-e.png">Eng</button>
+        </aside>
+      </div>
+
+      <div class="sns">
+        <h4>Community</h4>
+        <aside class="sns-box">
+          <button type="button" onclick="location.href='https://t.me/watchblock_official' " target="_blank"><img src="img/icons8-telegram-50 (3).png" alt="telegram SVG"></button>
+          <button type="button" onclick="location.href=' https://open.kakao.com/o/sddLWxrf' " target="_blank"><img src="img/KakaoTalk_logo.svg" alt="kakao SVG"></button>
+        </aside>
+      </div>
+    </div>
+
+    <p class="footer_p">재단은 코인제작 및 플랫폼 운영, 지갑 관리, 거래소 상장 추진 및 관리에 관한 업무만 진행하고 있습니다.</p>
+
+    <div class="btns">
+      <div class="moveTopBtn">▲</div>
+    </div>
+  </footer>
+
+
+  
+  <!-- 스와이퍼 -->
+  <script>
+    const swiper = new Swiper('.swiper', {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+      breakpoints: {
+        
+        /* 768: {
+          slidesPerView: 2,  //브라우저가 768보다 클 때
+          spaceBetween: 40,
+        }, */
+        345: {
+          slidesPerView: 1,  //브라우저가 1024보다 클 때
+          spaceBetween: 20,
+        },
+        425: {
+          slidesPerView: 1,  //브라우저가 1024보다 클 때
+          spaceBetween: 20,
+        },
+        576: {
+          slidesPerView: 2,  //브라우저가 1024보다 클 때
+          spaceBetween: 20,
+        },
+        767: {
+          slidesPerView: 3,  //브라우저가 1024보다 클 때
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 3,  //브라우저가 1024보다 클 때
+          spaceBetween: 10,
+        },
+        991: {
+          slidesPerView: 3,  //브라우저가 1024보다 클 때
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 3,  //브라우저가 1024보다 클 때
+          spaceBetween: 30,
+        },
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+
+</script>
+
+<!-- 다른 기능 -->
+  <script>
+    /* aos */
+    AOS.init();
+
+    /*  */
+    let currentImageIndex23 = 0;
+    let currentImageIndex24 = 0;
+
+    function changeImage(index, className) {
+      if (className === 'img-display-23') {
+        currentImageIndex23 = index - 1;
+        const images23 = document.querySelectorAll(`.${className}`);
+        for (let i = 0; i < images23.length; i++) {
+          images23[i].style.display = 'none';
+        }
+        images23[currentImageIndex23].style.display = 'block';
+      } else if (className === 'img-display-24') {
+        currentImageIndex24 = index - 5;
+        const images24 = document.querySelectorAll(`.${className}`);
+        for (let i = 0; i < images24.length; i++) {
+          images24[i].style.display = 'none';
+        }
+        images24[currentImageIndex24].style.display = 'block';
+      }
+    }
+
+    /* 하단버튼 */
+      const $topBtn = document.querySelector(".moveTopBtn");
+
+      // 버튼 클릭 시 맨 위로 이동
+      $topBtn.onclick = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });  
+      }
+
+      const $bottomBtn = document.querySelector(".moveBottomBtn");
+
+      // 버튼 클릭 시 페이지 하단으로 이동
+      $bottomBtn.onclick = () => {
+        window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+      };
+
+      /* 스크롤 이벤트를 감지 */
+       window.addEventListener("scroll", function() {
+      // 스크롤 위치를 가져옵니다.
+      const scrollTop = window.scrollY;
+
+      // 애니메이션을 적용할 요소를 선택합니다.
+      const animatedElement = document.querySelector(".animated-element");
+
+      // 요소의 애니메이션 속성을 변경합니다.
+      animatedElement.style.transform = `translateY(${scrollTop}px)`;
+    });
+  </script>
+
+
+</body>
+
+
+</html>

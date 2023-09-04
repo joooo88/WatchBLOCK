@@ -1,0 +1,808 @@
+@import "./mixin";
+
+/*데탑 1440px*/
+@include desktop{
+    main{
+        #about{
+            .about-bg2{
+                img{
+                    height: 275vh;
+                }
+            }
+            .about1{
+                gap: 3rem;
+            }
+            .about2 {
+                .swiper{
+                    width: 90%;
+                }
+            }
+            .about3 {
+                .hover-box{
+                    justify-content: center;
+                    ul {
+                        .di-down {
+                            img{
+                                width: 200px;
+                                border-radius: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #coin {
+            .coin-main {
+                .animated-element{
+
+                }
+                .coin-right {
+                    width: 40%;
+                    padding-left: 3.5rem;
+                    .coin-up {
+                        margin-bottom: 2rem;
+                        h3{
+                            font-size: 1.1rem;
+                        }
+                    }
+                    .coin-text{
+                        gap: 0.5rem;
+                        flex-direction: column;
+                        margin-left: .3rem;
+                    }
+                }
+                .coin-left {
+                    li {
+                        h3 {
+                            margin-bottom: 1.3rem;
+                            p{
+                                font-size: 1rem;
+                                padding: 0.3rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #roadmap {
+            .road-box {
+                ul{
+                    div {
+                        li {
+                            img{
+                                width: 450px;
+                                height: 300px;
+                            }
+                        }
+                        h2{
+                            font-size: 2rem;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+/*노트북 1024px*/
+@include laptop{
+    header {
+        .hd_all {
+            article {
+                width: 100%;
+            }
+        }
+    }
+    main {
+        #home {
+            .home_wrap {
+                .home_left {
+                    width: 45%;
+                    .home_logo {
+                        img{
+                            width: 200px;
+                        }
+                    }
+                    .home_btn{
+                        flex-direction: column;
+                        .button-64{
+                            font-size: 1rem;
+                            padding: 2px;
+                        }
+                    }
+                }
+                .home_right{
+                    width: 60%;
+                }
+            }
+        }
+        #about {
+            padding: 0px 9rem;
+            .about-bg2 {
+                img{
+                    height: 260vh;
+                }
+            }
+            .about1 {
+                gap: 1.5rem;
+                .container-item{
+                    gap: 10px;
+                    width: 55%;
+                    grid-template-columns: repeat(3, 120px);
+                    grid-template-rows: repeat(4, 130px);
+                    //justify-content: center;
+                    .item{
+                        //margin-left: 3rem;
+                        font-size: 1rem;
+                        font-weight: normal;
+                        div{
+                            padding: 0.4rem;
+                        }
+                    }
+                }
+                .ab1-box {
+                    white-space: nowrap;
+                    h2{
+                        margin-bottom: 2rem;
+                    }
+                    h3{
+                        font-size: 1.2rem;
+                        bb{
+                            font-size: 1.3rem;
+                        }
+                    }
+                    img{
+                        width: 120px;
+                    }
+                }
+            }
+            .about3 {
+                .hover-box{
+                    ul {
+                        .di-down {
+                            img{
+                                width: 150px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #coin{
+            padding: 0 4rem 5rem;
+            .coin-main{
+                flex-direction: column;
+                .coin-right{
+                    padding-left: 0;
+                    width: 100%;
+                    .coin-up{
+                        padding-left: 3rem;
+                    }
+                    .coin-down {
+                        div{
+                            margin: 0 auto;
+                            width: 90%;
+                        }
+                    }
+                    .coin-text{
+                        flex-direction:row ;
+                        margin-left: 0;
+                        justify-content: center;
+                    }
+                }
+                .coin-left{
+                    width: 100%;
+                    margin-left: 4rem;
+                    padding-left: 3rem;
+                }
+            }
+        }
+        #roadmap{
+            padding: 0 5rem;
+            .road-box {
+                ul {
+                    div {
+                        li {
+                            img{
+                                width: 360px;
+                                height: 280px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #contact {
+            .con-sub {
+                ul {
+                    .con-input{
+                        form{
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*패드 991px*/
+@include tablet{
+    main {
+        #home {
+            .home_wrap {
+                .home_right {
+                    margin-right: 6rem;
+                    .home-r-b{
+                        width: 100%;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+        #about {
+            .about-bg2 {
+                img{
+                    height: 247vh;
+                }
+            } 
+            .about1 {
+                gap: 2rem;
+                .ab1-box{
+                    white-space: normal;
+                    h3 {
+                        font-size: 1rem;
+                        bb{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+            .about2 {
+                .ab2-box {
+                    width: 90%;
+                    margin: 0 auto;
+                }
+            }
+            .about3 {
+                .hover-box {
+                    ul {
+                        .di-up {
+                            height: 180px;
+                            div{
+                                width: 30px;
+                                height: 30px;
+                                h3{
+                                    font-size: 1.1rem;
+                                }
+                            }
+                            img{
+                                width: 30px;
+                            }
+                            h4{
+                                font-size: 1.1rem;
+                            }
+                        }
+                        .di-down{
+                            height: 120px;
+                        }
+                    }
+                }
+            }
+        }
+        #roadmap {
+            .road-box {
+                ul {
+                    div{
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*아이패드 768px*/
+@include itablet{
+    header {
+        .hd_all {
+            article {
+                .pc_menu {
+                    .menu_style {
+                        a{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main {
+        #home {
+            .home_wrap {
+                .home_right{
+                    margin-right: 4rem;
+                }
+            }
+        }
+        #about {
+            padding: 0px 7rem;
+            .about-bg2{
+                img{
+                    height: 280vh;
+                }
+            }
+            .about1{
+                flex-direction: column-reverse;
+                .ab1-box{
+                    width: 100%;
+                    img{
+                        display: none;
+                    }
+                }
+                .container-item{
+                    width: 100%;
+                    margin: 0 auto;
+                    grid-template-columns: repeat(3, 32%);
+                }
+            }
+            .about2{
+                padding-top: 1rem;
+                .ab2-box {
+                    h3{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+            .about3{
+                padding-top: 2rem;
+                }
+        }
+        #coin {
+            .coin-main {
+                padding: 2rem 0;
+                .coin-left{
+                    margin-left: 2rem;
+                    padding-left: 2rem;
+                    li {
+                        h3{
+                            margin-bottom: 1rem;
+                            p{
+                                left: 11rem;
+                            }
+                        }
+                    }
+                    .coin-01 {
+                        h3 {
+                            p{
+                                width: 100px;
+                            }
+                            @keyframes showColor {
+                                from {
+                                  width: 0;
+                                  opacity: 0;
+                                }
+                                to {
+                                  width: 10r0px;
+                                  opacity: 1;
+                                }
+                              }
+                        }
+                    }
+                    .coin-02 {
+                        h3 {
+                            p{
+                                width: 100px;
+                            }
+                        }
+                    }
+                    .coin-03 {
+                        h3 {
+                            p{
+                                width: 100px;
+                            }
+                        }
+                    }
+                    .coin-04 {
+                        h3 {
+                            p{
+                                width: 50px;
+                            }
+                            @keyframes showColor2 {
+                                from {
+                                  width: 0;
+                                  opacity: 0;
+                                }
+                                to {
+                                  width: 50px;
+                                  opacity: 1;
+                                }
+                              }
+                        }
+                    }
+                    .coin-05 {
+                        h3 {
+                            p{width: 200px;
+                                @keyframes showColor3 {
+                                    from {
+                                      width: 0;
+                                      opacity: 0;
+                                    }
+                                    to {
+                                      width: 200px;
+                                      opacity: 1;
+                                    }
+                                  }
+                            }
+                        }
+                    }
+                    .coin-06 {
+                        h3 {
+                            p{
+                                width: 300px;
+                            }
+                            @keyframes showColor4 {
+                                from {
+                                  width: 0;
+                                  opacity: 0;
+                                }
+                                to {
+                                  width: 300px;
+                                  opacity: 1;
+                                }
+                              }
+                        }
+                    }
+                }
+            }
+        }
+        #roadmap {
+            .road-box {
+                ul {
+                    div{
+                        gap: 1rem;
+                        
+                        h2{
+                        }
+                    }
+                }
+                .road23 {
+                    div {
+                        flex-direction: column;
+                        align-items: center;
+                        li{
+                            width: 100%;
+                            text-align: center;
+                            img{
+                                width: 450px;
+                                height: 300px;
+                                margin: 0 auto;
+                            }
+                        }
+                        h2{
+                            padding: 0;
+                        }
+                        .text-23{
+                            padding: 0 4rem;
+                        }
+                    }
+                }
+                .road24{
+                    div{
+                        flex-direction: column-reverse;
+                        align-items: center;
+                        li{
+                            width: 100%;
+                            text-align: center;
+                            img{
+                                width: 450px;
+                                height: 300px;
+                                margin: 0 auto;
+                            }
+                        }
+                        h2{
+                            padding: 0;
+                        }
+                        .text-24{
+                            padding: 0 4rem;
+                        }
+                    }
+                }
+            }
+        }
+        #contact {
+            .con-sub {
+                ul{
+                    flex-direction: column;
+                    width: 100%;
+                    .con-text{
+                        width: 100%;
+                        padding-top: 5rem;
+                    }
+                    .con-input{
+                        width: 100%;
+                        form{
+                            padding: 2rem;
+                            margin: 0 auto;
+                            width: 70%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        .btns{
+            bottom: 1.5rem;
+            right: 1.5rem;
+        }
+    }
+}
+
+/* 모바일 767px*/
+@include mobile{
+    header {
+        .hd_all{
+            article{
+                display: none;
+            }
+            .m_menu_button{
+                display: block;
+            }
+        }
+       
+    }
+    main {
+        #home {
+            .home_wrap{
+                flex-direction: column;
+                .home_left{
+                    padding-top: 8rem;
+                    .home_btn{
+                        flex-direction: row;
+                    }
+                }
+                .home_right{
+                    margin: 0 auto;
+                    padding-top: 3rem;
+
+                }
+            }
+        }
+        #about {
+            .about-bg2 {
+                img{
+                    height: 435vh;
+                }
+            }
+            .about3 {
+                .hover-box{
+                    flex-direction: column;
+                    ul {
+                        .di-down{
+                            height: 180px;
+                            img{
+                                width: 200px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        .footer_area{
+            flex-direction: column;
+            gap: 1rem;
+            .white_pp{
+                .but-box{
+                    display: flex;
+                }
+            }
+            .sns {
+                aside{
+                    button{
+                        &:nth-of-type(2){
+                            margin-left: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* 모바일2 576px */
+@include mobile2{
+    main {
+        #about {
+            .about-bg2 {
+                img{
+                    height: 445vh;
+                }
+            }
+            
+            .about3{
+                padding-top: 5rem;
+            }
+        }
+        #coin {
+            .coin-main {
+                .coin-left{display: none;}
+            }
+        }
+        #roadmap {
+            .road-box {
+                .road23 {
+                    div {
+                        li {
+                            img{
+                                width: 400px;
+                                height: 280px;
+                            }
+                        }
+                        .text-23{
+                            padding: 0 1rem;
+                        }
+                    }
+                }
+                .road24 {
+                    div {
+                        li {
+                            img{
+                                width: 400px;
+                                height: 280px;
+                            }
+                        }
+                        .text-24{
+                            padding: 0 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+    
+
+/* 모바일3 갤석시 425px */
+@include galaxy{
+    main {
+        #home {
+            .home_wrap {
+                .home_right{
+                    width: 90%;
+                    padding-top: 8rem;
+                }
+            }
+        }
+        #about {
+            padding: 0 3.9rem;
+            .about-bg2{
+                border-radius: 25px;
+            }
+            .about1 {
+                .container-item {
+                    .item{
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+        #coin {
+            padding: 0 3rem 5rem;
+            .coin-title{
+                padding: 2rem 0 3rem;
+            }
+            .coin-main {
+                .coin-right {
+                    .coin-down {
+                        div {
+                            h3{
+                                padding-left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #roadmap{
+            padding: 0 2rem;
+            .road-box {
+                .road23 {
+                    div {
+                        li {
+                            img{
+                                width: 320px;
+                                height: 230px;
+                            }
+                        }
+                    }
+                }
+                .road24 {
+                    div {
+                        li {
+                            img{
+                                width: 320px;
+                                height: 230px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* 모바일4 아이폰 375px */
+@include iphone{
+    main {
+        #about {
+            .about-bg2 {
+                img{
+                    height: 455vh;
+                }
+            }
+            .about1 {
+                .container-item {
+                    .item2{
+                        grid-row: 2/2;
+                        grid-column: 1/4;    
+                    }
+                    .item3{
+                        grid-column: 1/4;    
+                    }
+                    .item4{
+                        grid-row: 4/4;
+                        grid-column: 1/4;    
+                    }
+                }
+            }
+            .about2 {
+                padding-top: 5rem;
+                .ab2-box {
+                    h3{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        #coin{
+            padding: 0 2rem 5rem;
+            .coin-main {
+                .coin-right {
+                    .coin-text{
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+        #roadmap {
+            .road-box {
+                .road23 {
+                    div {
+                        li {
+                            img{
+                                width: 280px;
+                                height: 210px;
+                            }
+                        }
+                    }
+                }
+                .road24 {
+                    div {
+                        li {
+                            img{
+                                width: 280px;
+                                height: 210px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

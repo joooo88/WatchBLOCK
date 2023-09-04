@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/*데탑 1440px*/
+@media screen and (max-width: 1440px) {
+  main #about .about-bg2 img {
+    height: 284vh;
+  }
+  main #about .about1 .ab1-box h3 bb {
+    font-size: 1.3rem;
+  }
+  main #coin .coin-main {
+    padding: 0 0 1rem;
+  }
+  main #coin .coin-main .coin-main {
+    padding-top: 1rem;
+  }
+  main #coin .coin-main .coin-main .coin-left {
+    padding-top: 3rem;
+  }
+}
+/*노트북 1024px*/
+@media screen and (max-width: 1024px) {
+  main #about .about-bg2 img {
+    height: 270vh;
+  }
+  main #about .about1 .ab1-box h3 {
+    font-size: 1rem;
+  }
+  main #about .about1 .ab1-box h3 bb {
+    font-size: 1rem;
+  }
+  main #about .about2 {
+    padding-top: 0rem;
+  }
+  main #about .about2 .ab2-box h3 {
+    font-size: 1.1rem;
+  }
+  main #about .about3 .hover-box ul .di-up .no1 {
+    font-size: 1rem;
+  }
+}
+/*패드 991px*/
+@media screen and (max-width: 991px) {
+  main #about {
+    padding: 0 6rem;
+  }
+  main #about .about-bg2 {
+    border-radius: 30px;
+  }
+  main #about .about-bg2 img {
+    height: 258vh;
+  }
+}
+/*아이패드 768px*/
+@media screen and (max-width: 768px) {
+  main #about .about-bg2 img {
+    height: 300vh;
+  }
+  main #about .about3 .hover-box ul .di-up {
+    padding: 1rem 0;
+    height: 240px;
+    justify-content: space-between;
+  }
+  main #about .about3 .hover-box ul .di-up .no2 {
+    top: 4rem;
+  }
+}
+/* 모바일 767px*/
+@media screen and (max-width: 767px) {
+  main #about .about-bg2 img {
+    height: 475vh;
+  }
+  main #about .about3 .hover-box ul .di-up .no2 {
+    top: 7rem;
+  }
+  main #coin .coin-main .coin-left li h3 p {
+    left: 13rem;
+  }
+  footer .footer_area .inc {
+    width: 100%;
+  }
+}
+/* 모바일2 576px */
+@media screen and (max-width: 576px) {
+  main #home .home_wrap .home_right {
+    padding-top: 5rem;
+    width: 80%;
+  }
+  main #about .about-bg2 img {
+    height: 483vh;
+  }
+  main #coin .coin-main .coin-right .coin-down div h3 {
+    padding-left: 0;
+  }
+  main #coin .coin-main .coin-right .coin-text {
+    text-align: center;
+    flex-direction: column;
+  }
+}
+/* 모바일3 갤석시 425px */
+@media screen and (max-width: 425px) {
+  main #home .home_wrap .home_right {
+    height: 100%;
+    width: 90%;
+    padding-top: 3rem;
+  }
+  main #about {
+    padding: 0 4rem;
+  }
+  main #about .about-bg2 img {
+    height: 495vh;
+  }
+  main #about .about1 .container-item .item2 {
+    grid-row: 2/2;
+    grid-column: 1/4;
+  }
+  main #about .about1 .container-item .item3 {
+    grid-column: 1/4;
+  }
+  main #about .about1 .container-item .item4 {
+    grid-row: 4/4;
+    grid-column: 1/4;
+  }
+  main #about .about2 {
+    height: 100%;
+    padding-top: 3rem;
+  }
+  main #about .about2 .swiper .swiper-scrollbar {
+    display: none;
+  }
+}
+/* 모바일4 아이폰 375px */
+@media screen and (max-width: 375px) {
+  main #home .home_wrap .home_right {
+    height: 55%;
+  }
+  main #home .home_wrap .home_right .home-r-b .home_txt h4 {
+    font-size: 1.3rem;
+  }
+  main #home .home_wrap .home_right .home-r-b .home_txt p {
+    line-height: 1.2;
+  }
+  main #about .about-bg1 {
+    display: none;
+  }
+  main #about .about-bg2 {
+    top: 7rem;
+  }
+  main #about .about1 {
+    padding: 10rem 0 0;
+  }
+  main #coin .coin-title h2 {
+    text-align: center;
+  }
+}/*# sourceMappingURL=moblie_eng.css.map */

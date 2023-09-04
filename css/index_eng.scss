@@ -1,0 +1,68 @@
+*{margin:0; padding:0; box-sizing:border-box;}
+    a{text-decoration : none;}
+    a:focus{
+      outline: none;
+    }
+    address{font-style:normal;}
+
+    body{
+        overflow-x: hidden;
+        
+    }
+
+/*header*/
+
+/* main */
+main {
+  #about {
+    .about1 {
+      .ab1-box {
+        h3{
+          font-size: 1.3rem;
+        }
+      }
+    }
+    .about3 {
+      .ab3-box{
+        h2{
+          font-family: "Hurricane", cursive;
+          margin-bottom: 4rem;
+          font-family: "Hurricane", cursive;
+          font-size: 2.5rem;
+        }
+      }
+      .hover-box {
+        ul {
+          .di-up {
+            h4{
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  #coin {
+    .coin-main {
+      .coin-right {
+        padding-top: 4rem;
+        .coin-up{
+          margin-bottom: 2rem;
+        }
+        .coin-text{
+          margin-left: 0.2rem;
+        }
+      }
+    }
+  }
+  #roadmap {
+    .road-box {
+      ul {
+        div{
+          gap: 2rem;
+        }
+      }
+    }
+  }
+}
+/*footer*/
